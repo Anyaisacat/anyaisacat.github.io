@@ -4,9 +4,16 @@
     "description": "The app of AnyaIsACat",
     "dir": "auto",
     "lang": "en",
-     "display": "fullscreen",
-     "background_color": "#456BD9",
-     "theme_color": "#906BD9",
-     "start_url": "",
-     "categories": ["web"]
+    "icons":
+    [{
+      "src": "2022-10-20%2019.00.46.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "badge"
+     }],
+    "display": "fullscreen",
+    "background_color": "#456BD9",
+    "theme_color": "#906BD9",
+    "start_url": "https://anyaisacat.github.io/",
+    "categories": ["web"]
  }
