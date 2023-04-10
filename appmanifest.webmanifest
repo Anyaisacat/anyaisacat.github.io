@@ -6,8 +6,8 @@
     "lang": "en",
     "icons":
     [{
-      "src": "2022-10-20%2019.00.46.png",
-      "sizes": "192x192",
+      "src": "AnyaIsACatIcon.png",
+      "sizes": "258x320",
       "type": "image/png",
       "purpose": "badge"
      }],
