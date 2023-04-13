@@ -4,12 +4,26 @@
     "description": "The app of AnyaIsACat",
     "dir": "auto",
     "lang": "en",
-    "icons":
-    [{
+    "icons": [
+      {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+      },
+      {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+      },
+      {
       "src": "AnyaIsACatIcon.png",
       "sizes": "258x320",
-      "type": "image/png",
-      "purpose": "badge"
+      "type": "image/png"
+     },
+     {
+      "src": "2022-10-20 19.00.46.png",
+      "sizes": "2836x2168",
+      "type": "image/png"
      }],
     "display": "fullscreen",
     "background_color": "#456BD9",
