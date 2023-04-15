@@ -1,5 +1,5 @@
 {
-    "name": "The AnyaIsACat App",
+    "name": "Anya Is A Cat",
     "short-name": "AnyaIsACat",
     "description": "The app of AnyaIsACat",
     "dir": "auto",
@@ -16,7 +16,7 @@
       "type": "image/png"
      }],
     "display": "fullscreen",
-    "background_color": "#456BD9",
+    "background_color": "#F0F0F0",
     "theme_color": "#906BD9",
     "start_url": "https://anyaisacat.github.io/",
     "categories": ["web"]
