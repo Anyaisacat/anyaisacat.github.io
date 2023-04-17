@@ -7,7 +7,23 @@ Anya is a cat
 <link rel="icon" type="image/png" href="https://anyaisacat.github.io/AnyaIsACatIcon.png">
 <link rel="manifest" href="/appmanifest.webmanifest" />
 </head>
-<body>
+<body onload="initCube()">
+    <div id="cube" texts="AnyaIsACat;Ragdoll;"
+     images="AnyaIsACatIcon.png;AnyaIsAPortrait.png;Youtube_icon.png" 
+     style="
+        background-image: url('underthetable.png');
+         height : 1024px; 
+        background-position: center; 
+          background-repeat: no-repeat;
+          background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+        background-color: #cccccc;
+   "></div>
+</body>
+<script src="/three.min.js"></script>
+<script src="/3dcube.js"></script>
+<!--
 <h1>Hello from Anya!</h1>
 <p>I'm a cute little cat.</p>
 <p>
@@ -18,19 +34,14 @@ Anya is a cat
 <a href="https://www.youtube.com/@anyaisacat" target="_BLANK_"><img src="YouTube_icon.png" alt="YouTube link" width="50" height="40"/></a>
 </h2>
 </p>
+-->
 <script>
-    // This is the service worker with the Cache-first network
-
-    // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
-
     // Check compatibility for the browser we're running this in
     if ("serviceWorker" in navigator) {
     if (navigator.serviceWorker.controller) {
         console.log("[PWA Builder] active service worker found, no need to register");
     } else {
-        // Register the service worker
-        navigator.serviceWorker
-        .register("pwabuilder-sw.js", {
+        navigator.serviceWorker.register("pwabuilder-sw.js", {
             scope: "./"
         })
         .then(function (reg) {
