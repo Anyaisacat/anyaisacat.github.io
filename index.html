@@ -13,30 +13,24 @@ Anya is a cat
      images="AnyaIsACat1.png;AnyaIsACat2.png;AnyaIsAPortrait.png;Youtube_icon.png" 
      style="
         background-image: url('underthetable.png');
-         height : 1024px; 
+         height : 512px; 
         background-position: center; 
           background-repeat: no-repeat;
           background-size: cover;
          background-repeat: no-repeat;
          background-attachment: fixed;
         background-color: #cccccc;
-   "></div>
+   ">
+   </div>
    </a>
+   <textarea id="aiprompt" name="aiprompt" rows="4" cols="80"></textarea>
+   <input type="button" onclick="getAI(aiprompt.value)" value="Send to AI"/>
+   <p id="airesponse" style="font-size: 30px; text-align:center"></p>
 </body>
+
 <script src="/three.min.js"></script>
 <script src="/3dcube.js"></script>
-<!--
-<h1>Hello from Anya!</h1>
-<p>I'm a cute little cat.</p>
-<p>
-<img src="2022-10-20 19.00.46.png" alt="Cute cat" width="200" height="180"/>
-</p>
-<p>
-<h2>
-<a href="https://www.youtube.com/@anyaisacat" target="_BLANK_"><img src="YouTube_icon.png" alt="YouTube link" width="50" height="40"/></a>
-</h2>
-</p>
--->
+<script src="/openai.js"></script>
 <script>
     // Check compatibility for the browser we're running this in
     if ("serviceWorker" in navigator) {
