@@ -1,4 +1,4 @@
-const apiKey = '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';
+const apiKey = 'Ss0eL6RwFdbkHS1qKEq7T3BlbkFJX8P89MKTwS51hBsPuF9U';
 const endpoint = 'https://api.openai.com/v1/chat/completions';
 
 function getAI(prompt) {
@@ -12,7 +12,7 @@ fetch(endpoint, {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
-    'Authorization': `Bearer ${apiKey}`
+    'Authorization': `Bearer ${'sk-' + apiKey}`
   },
   body: JSON.stringify(inputData)
 })
