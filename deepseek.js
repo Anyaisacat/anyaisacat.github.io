@@ -1,5 +1,5 @@
-const apiKey = '5ed7a6debec3453c868df4ff7fdc588e';
-const endpoint = 'https://api.deepseek.com/v1';
+const apiKeyDS = '5ed7a6debec3453c868df4ff7fdc588e';
+const endpointDS = 'https://api.deepseek.com/v1';
 
 function getDS(prompt) {
 const inputData = {
@@ -8,11 +8,11 @@ const inputData = {
   model: "model='deepseek-chat'"
 };
 
-fetch(endpoint, {
+fetch(endpointDS, {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
-    'Authorization': `Bearer ${'sk-' + apiKey}`
+    'Authorization': `Bearer ${'sk-' + apiKeyDS}`
   },
   body: JSON.stringify(inputData)
 })
