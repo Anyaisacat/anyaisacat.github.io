@@ -1,7 +1,7 @@
 const apiKey = '5ed7a6debec3453c868df4ff7fdc588e';
 const endpoint = 'https://api.deepseek.com/v1';
 
-function getAI(prompt) {
+function getDS(prompt) {
 const inputData = {
   messages: [{ role: "system", content: prompt}],
   max_tokens: 100,
